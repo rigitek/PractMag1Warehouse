@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PractMag1Warehouse"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="360" Width="271">
+    <Grid Margin="0,0,52,100">
+        <Button Content="Склады" HorizontalAlignment="Left" Margin="60,60,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <Button Content="Зоны" HorizontalAlignment="Left" Margin="60,95,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Button_Click"/>
+        <Button Content="Товары" HorizontalAlignment="Left" Margin="60,130,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Button_Click"/>
+        <Button Content="Перемещения" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="30" Click="Button_Click" Margin="60,165,0,0"/>
+        <Button Content="Отчеты" HorizontalAlignment="Left" Margin="60,200,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Button_Click"/>
 
     </Grid>
 </Window>

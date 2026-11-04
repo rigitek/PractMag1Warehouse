@@ -1,0 +1,25 @@
+﻿<Window x:Class="PractMag1Warehouse.Zone"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PractMag1Warehouse"
+        mc:Ignorable="d"
+        Title="Zone" Height="450" Width="800">
+    <Grid>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=10}"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,404,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="215,404,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="420,404,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="630,404,0,0" VerticalAlignment="Top" Width="160"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,381,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="169"/>
+        <Label Content="Тип" HorizontalAlignment="Left" Margin="10,355,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="184,380,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+        <Label Content="Объем" HorizontalAlignment="Left" Margin="225,355,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="346,380,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="138"/>
+        <Label Content="Склад&#xD;&#xA;" HorizontalAlignment="Left" Margin="565,355,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="489,381,0,0" VerticalAlignment="Top" Width="195" Height="16"/>
+        <Label Content="Нагрузка" HorizontalAlignment="Left" Margin="385,350,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Динамичность" HorizontalAlignment="Left" Margin="689,382,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+    </Grid>
+</Window>
