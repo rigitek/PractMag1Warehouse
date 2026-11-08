@@ -6,12 +6,15 @@
         xmlns:local="clr-namespace:PractMag1Warehouse"
         mc:Ignorable="d"
         Title="MainWindow" Height="360" Width="271">
-    <Grid Margin="0,0,52,100">
-        <Button Content="Склады" HorizontalAlignment="Left" Margin="60,60,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
-        <Button Content="Зоны" HorizontalAlignment="Left" Margin="60,95,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Button_Click"/>
-        <Button Content="Товары" HorizontalAlignment="Left" Margin="60,130,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Button_Click"/>
-        <Button Content="Перемещения" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="30" Click="Button_Click" Margin="60,165,0,0"/>
-        <Button Content="Отчеты" HorizontalAlignment="Left" Margin="60,200,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Button_Click"/>
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Margin="5">
 
+            <TextBlock Text="Добро пожаловать!" FontSize="16" TextAlignment="Center"/>
+            <TextBlock x:Name="Employee" FontSize="16" TextAlignment="Center"/>
+            <Button x:Name="WarehouseButton" Content="Склады" Margin="5" Click="Warehouse_Click"/>
+            <Button x:Name="EmployeeButton" Content="Сотрудники"   Margin="5" Click="Employee_Click"/>
+            <Button x:Name="ToolButton" Content="Оборудование" Margin="5" Click="Tool_Click"/>
+
+        </StackPanel>
     </Grid>
 </Window>

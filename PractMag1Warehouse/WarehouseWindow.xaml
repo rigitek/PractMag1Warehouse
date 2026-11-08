@@ -1,0 +1,35 @@
+﻿<Window x:Class="PractMag1Warehouse.WarehouseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PractMag1Warehouse"
+        mc:Ignorable="d"
+        Title="Склады" MinHeight="250" Width="500" SizeToContent="Height">
+    <Grid>
+        <StackPanel>
+
+            <DataGrid x:Name="wareHousesGrid" MinHeight="200" VerticalScrollBarVisibility="Auto" ItemsSource="{Binding}" Margin="5" AutoGenerateColumns="False" IsReadOnly="True">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Наименование"  Binding="{Binding Path=Name}" />
+                    <DataGridTextColumn Header="Адрес" Binding="{Binding Path=Address}"  />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <UniformGrid Columns="2" VerticalAlignment="Bottom" Margin="5,0">
+                <TextBlock>Наименование</TextBlock>
+                <TextBlock>Адрес</TextBlock>
+
+                <TextBox x:Name="name" Margin="0,0,5,0"/>
+                <TextBox x:Name="address" Margin="0,0,5,0" />
+            </UniformGrid>
+
+            <UniformGrid Columns="3" VerticalAlignment="Bottom">
+                <Button   Margin="5" Height="30" Content="Добавить"   Click="Add_Warehouse" />
+                <Button   Height="30" Content="Изменить"   Click="Edit_Warehouse"/>
+                <Button   Margin="5"  Height="30" Content="Удалить"  Click="Delete_Warehouse"/>
+            </UniformGrid>
+        </StackPanel>
+    </Grid>
+</Window>

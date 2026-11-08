@@ -6,12 +6,12 @@ namespace PractMag1Warehouse.Models
 {
     public class Zone
     {
-        public int id { get; set; }
-        public string type { get; set; }
-        public int capacity { get; set; }
-        public int currentLoad { get; set; }
-        public bool isDynamic { get; set; }
-        public int warehouseId { get; set; }
-        public Warehouse warehouse { get; set; }
+        public int Id { get; set; }
+        public string Type { get; set; }
+        public int Capacity { get; set; }
+        public int CurrentLoad { get; set; }
+        public bool IsDynamic { get; set; }
+        public int WarehouseId { get; set; }
+        public Warehouse Warehouse { get; set; }
     }
 }

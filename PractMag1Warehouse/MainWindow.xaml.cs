@@ -20,5 +20,25 @@ namespace PractMag1Warehouse
         {
             InitializeComponent();
         }
+
+        private void Warehouse_Click(object sender, RoutedEventArgs e)
+        {
+            //открытие окна со списком оборудования в аренде
+            WarehouseWindow WarehouseWindow = new WarehouseWindow();
+            this.Close();
+            WarehouseWindow.Show();
+        }
+
+        private void Employee_Click(object sender, RoutedEventArgs e)
+        {
+            //открытие окна со списком сотрудников
+            
+        }
+
+        private void Tool_Click(object sender, RoutedEventArgs e)
+        {
+            //открытие окна со списком оборуждования не в аренде
+            
+        }
     }
 }
