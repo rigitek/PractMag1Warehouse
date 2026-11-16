@@ -1,0 +1,44 @@
+﻿<Window x:Class="PractMag1Warehouse.ZoneWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PractMag1Warehouse"
+        mc:Ignorable="d"
+                Title="Zone" MinHeight="250" Width="550" SizeToContent="Height">
+    <Grid>
+        <StackPanel>
+
+            <DataGrid x:Name="zonesGrid" MinHeight="200" VerticalScrollBarVisibility="Auto" ItemsSource="{Binding}" Margin="5" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="zoneList_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Тип"  Binding="{Binding Path=Type}" />
+                    <DataGridTextColumn Header="Вместимость" Binding="{Binding Path=Capacity}"  />
+                    <DataGridTextColumn Header="Загруженность"  Binding="{Binding Path=CurrentLoad}" />
+                    <DataGridTextColumn Header="Склад" Binding="{Binding Path=isDynamic}"  />
+                    <DataGridTextColumn Header="Динамичность"  Binding="{Binding Path=Warehouse}" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <UniformGrid Columns="5" VerticalAlignment="Bottom" Margin="5,0">
+                <TextBlock>Тип</TextBlock>
+                <TextBlock>Вместимость</TextBlock>
+                <TextBlock>Загруженность</TextBlock>
+                <TextBlock>Склад</TextBlock>
+                <TextBlock></TextBlock>
+
+                <TextBox x:Name="Type" Margin="0,0,5,0"/>
+                <TextBox x:Name="Capacity" Margin="0,0,5,0" />
+                <TextBox x:Name="CurrentLoad" Margin="0,0,5,0"/>
+                <ComboBox x:Name="WarehouseComboBox" SelectedItem="{Binding Warehouse}"  Margin="0,0,5,0"/>
+                <CheckBox Content="динамичный?" x:Name="isDynamic" Margin="0,0,5,0" />
+            </UniformGrid>
+
+            <UniformGrid Columns="4" VerticalAlignment="Bottom">
+                <Button   Margin="5" Height="30" Content="Добавить"   Click="Add_Zone" />
+                <Button   Height="30" Content="Изменить"   Click="Edit_Zone"/>
+                <Button   Margin="5"  Height="30" Content="Удалить"  Click="Delete_Zone"/>
+                <Button   Margin="0 0 5 0"  Height="30" Content="Меню"  Click="Back_Click"/>
+            </UniformGrid>
+        </StackPanel>
+    </Grid>
+</Window>
