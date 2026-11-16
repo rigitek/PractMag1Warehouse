@@ -12,7 +12,7 @@
             <TextBlock Text="Добро пожаловать!" FontSize="16" TextAlignment="Center"/>
             <TextBlock x:Name="Employee" FontSize="16" TextAlignment="Center"/>
             <Button x:Name="WarehouseButton" Content="Склады" Margin="5" Click="Warehouse_Click"/>
-            <Button x:Name="EmployeeButton" Content="Сотрудники"   Margin="5" Click="Employee_Click"/>
+            <Button x:Name="EmployeeButton" Content="Зоны"   Margin="5" Click="Zone_Click"/>
             <Button x:Name="ToolButton" Content="Оборудование" Margin="5" Click="Tool_Click"/>
 
         </StackPanel>

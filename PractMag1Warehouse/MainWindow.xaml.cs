@@ -29,10 +29,12 @@ namespace PractMag1Warehouse
             WarehouseWindow.Show();
         }
 
-        private void Employee_Click(object sender, RoutedEventArgs e)
+        private void Zone_Click(object sender, RoutedEventArgs e)
         {
-            //открытие окна со списком сотрудников
-            
+            ZoneWindow zoneWindow= new ZoneWindow();
+            this.Close();
+            zoneWindow.Show();
+
         }
 
         private void Tool_Click(object sender, RoutedEventArgs e)

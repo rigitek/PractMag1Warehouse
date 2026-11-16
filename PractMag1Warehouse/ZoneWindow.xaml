@@ -12,10 +12,9 @@
             <DataGrid x:Name="zonesGrid" MinHeight="200" VerticalScrollBarVisibility="Auto" ItemsSource="{Binding}" Margin="5" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="zoneList_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Тип"  Binding="{Binding Path=Type}" />
-                    <DataGridTextColumn Header="Вместимость" Binding="{Binding Path=Capacity}"  />
-                    <DataGridTextColumn Header="Загруженность"  Binding="{Binding Path=CurrentLoad}" />
-                    <DataGridTextColumn Header="Склад" Binding="{Binding Path=isDynamic}"  />
-                    <DataGridTextColumn Header="Динамичность"  Binding="{Binding Path=Warehouse}" />
+                    <DataGridTextColumn Header="Вместимость %" Binding="{Binding Path=Capacity}"  />
+                    <DataGridTextColumn Header="Загруженность %"  Binding="{Binding Path=CurrentLoad}" />
+                    <DataGridTextColumn Header="Склад" Binding="{Binding Path=Warehouse}"  />
                 </DataGrid.Columns>
             </DataGrid>
 
